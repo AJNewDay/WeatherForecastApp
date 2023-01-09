@@ -1,0 +1,29 @@
+header {
+  font-size: 20px;
+  background-color: forestgreen;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+}
+
+h2 {
+  color: forestgreen;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  margin: 0;
+  background-color: wheat;
+  padding: 20px;
+}
+
+body {
+}
+
+.icons {
+  display: inline-block;
+}

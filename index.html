@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weather Page</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- <link rel="icon" href="./favicon.ico" type="image/x-icon"> -->
+    <header>
+      <h1>Weather Page</h1>
+    </header>
+  </head>
+
+  <body>
+    <main>
+      <h2>Input City</h2>
+      <div class="card">
+        <form id="form">
+          <input type="search" id="query" name="q" placeholder="Search..." />
+          <button id="search">Search</button>
+        </form>
+        <div id="forecast-container">
+          <div id="icons-container" class="icons">
+            <p class="weather" id="day1"></p>
+            <p class="temp" id="day1temp">Temperature</p>
+            <p class="windSpeed" id="day1Wind">WindSpeed</p>
+            <p class="hum" id="hum">Humidity</p>
+          </div>
+          <div id="icons-container" class="icons">
+            <p class="weather" id="day2"></p>
+            <p class="temp" id="day2temp">Temperature</p>
+            <p class="windSpeed" id="day2Wind">WindSpeed</p>
+            <p class="hum" id="day2Hum">Humidity</p>
+          </div>
+          <div id="icons-container" class="icons">
+            <p class="weather" id="day3"></p>
+            <p class="temp" id="day3temp">Temperature</p>
+            <p class="windSpeed" id="day3Wind">WindSpeed</p>
+            <p class="hum" id="day3Hum">Humidity</p>
+          </div>
+          <div id="icons-container" class="icons">
+            <p class="weather" id="day4"></p>
+            <p class="temp" id="day4temp">Temperature</p>
+            <p class="windSpeed" id="day4Wind">WindSpeed</p>
+            <p class="hum" id="day4Hum">Humidity</p>
+          </div>
+          <div id="icons-container" class="icons">
+            <p class="weather" id="day5"></p>
+            <p class="temp" id="day5temp">Temperature</p>
+            <p class="windSpeed" id="day5Wind">WindSpeed</p>
+            <p class="hum" id="day5Hum">Humidity</p>
+          </div>
+          <!-- <h3 id="conditions">Current Conditions</h3> -->
+        </div>
+      </div>
+
+      <h2>Search History</h2>
+
+      <div class="card">
+        <h2 id="log">LOG</h2>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
