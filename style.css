@@ -21,9 +21,58 @@ h2 {
   padding: 20px;
 }
 
-body {
+.icons-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  height: 240px;
+  width: 1200px;
+}
+*/ .p {
+  display: inline-block;
+  display: flexbox;
+  display: flex;
 }
 
-.icons {
+.weather {
+  text-align: center;
   display: inline-block;
+  margin: 0;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+.temp {
+  text-align: center;
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+.windSpeed {
+  text-align: center;
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+.hum {
+  text-align: center;
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+.forecast-container {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  height: 300px;
+  width: 1300px;
 }

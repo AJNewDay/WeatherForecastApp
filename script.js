@@ -9,7 +9,7 @@ let forecastContainer = document.getElementById("forecast-container");
 if (localStorage.getItem("saveCity") === null) {
   localStorage.setItem("saveCity", JSON.stringify([0], [1], [2], [3], [4]));
 }
-// consider click event
+
 async function getCoordinates(event) {
   event.preventDefault();
   let city = input.value;
@@ -38,17 +38,17 @@ async function getWeather() {
     const iconImage = document.createElement("img");
     iconImage.src = `https://openweathermap.org/img/wn/${data.list[index].weather[0].icon}@2x.png`;
     forecastContainer.appendChild(iconImage);
-    let temp1 = document.getElementById("day1Temp");
+    let temp1 = document.getElementById("Temp");
     console.log(data.list[index].main.temp);
     temp1.innerHTML = data.list[index].main.temp;
     console.log(temp1);
     forecastContainer.appendChild(temp1);
-    let wind1 = document.getElementById("day1Wind");
+    let wind1 = document.getElementById("Wind");
     console.log(data.list[index].wind.speed);
     wind1.innerHTML = data.list[index].wind.speed;
     console.log(wind1);
     forecastContainer.appendChild(wind1);
-    let hum1 = document.getElementById("day1Hum");
+    let hum1 = document.getElementById("Hum");
     console.log(data.list[index].main.humidity);
     hum1.innerHTML = data.list[index].main.humidity;
     console.log(hum1);
